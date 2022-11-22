@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #566573;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a:hover {
+	color: #ff0055;
+}
+
+.header {
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	flex: 0 0 auto;
+}
+
+.header__logo_img {
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+	
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav__linkcurse {
+	margin-left: 10px;
+}
+
+.nav__linkschedule {
+	margin-left: 10px;
+}
+
+.nav__linkteacher {
+	margin-left: 10px;
+}
+
+.nav__linkmailing {
+	margin-left: 10px;
+}
+
+.nav__linkcontact {
+	margin-left: 10px;
+}
+
+.mainpage {
+	flex: 1 0 auto;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+			
+.mainpage__headtext {
+	font-size: 40px;
+	line-height: 140%;
+	font-weight: bold;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.mainpage_button_wrapper {
+	display: flex;	
+	justify-content: center;
+}
+
+.mainpage_button_wrapper div {
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 60px;
+	border-radius: 10px;
+	background: #ff0055;
+}
+
+.mainpage_button_wrapper div a{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+
+.mainpage_button_wrapper div:nth-child(1) {
+	margin-right: 	50px;
+}
+
+.mainpage_button_wrapper div:hover{
+		background: #fff;
+		color: #ff0055;
+}
+.mainpage_button_wrapper div:hover a{
+		background: #fff;
+		color: #ff0055;
+		cursor: pointer;
+}
+
+/* -------------------------------------------- FOOTER ---------------------------------*/
+
+.footer {
+	display: flex;	
+	flex: 0 0 auto;
+	margin-bottom: 20px;
+	width: 320px;
+	margin: 20px auto;
+}
+
+.footer_social {
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__VK, .footer__YT, .footer__FB, .footer__IG {
+	width: 50px;
+	height: 50px;
+	background:  #ff0055;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* -------------------------------------------- MOBILE ---------------------------------*/
+
+@media screen and (max-width: 450px) {
+	.header {
+		flex-direction: column;
+	}
+
+	.header__logo_img {
+		margin-bottom: 	20px;
+	}
+
+	.mainpage_button_wrapper div {
+		width: 120px;
+		height: 40px;
+	}
+
+}

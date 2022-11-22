@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div  style="width: 90vw; margin: 0 auto;text-align: center; height:5vh;margin-top: 5vh;"> <span id="lvlScreen"></span> / 100 </div>
+	<div class="about" style="width: 90vw; margin: 0 auto;text-align: center; height:5vh;margin-top: 0.5vh;"> Открой 100 дверей и получи приз 100$.</div>
+	<section class="container" style="width: 880px; margin: 0 auto;justify-content: space-around;display: flex;height:50vh;margin-top: 2vh;">
+
+		<div id="hover" class="hover" style="border: 2px solid black; height: 500px; overflow: hidden; "><button class="door" id="0" style="width: 260px; height: 500px; background-color: #dbbd7d; border: 2px solid gray">DOOR ONE <div style="background-color: black; border: 1px black solid; border-radius: 100%; width: 20px;height: 20px; position: relative; left: 85%; display: flex; justify-content: center;align-items: center; color: transparent;"> .</div></button></div>
+		<div id="hover" class="hover" style="border: 2px solid black; height: 500px; overflow: hidden; "><button class="door" id="1" style="width: 260px; height: 500px; background-color: #dbbd7d; border: 2px solid gray">DOOR TWO <div style="background-color: black; border: 1px black solid; border-radius: 100%; width: 20px;height: 20px; position: relative; left: 85%; display: flex; justify-content: center;align-items: center; color: transparent;"> .</div></button></div>
+		<div class="hover" style="border: 2px solid #090005; height: 500px; overflow: hidden; "><button class="door" id="2" style="width: 260px; height: 500px; background-color: #dbbd7d; border: 2px solid gray">DOOR THREE <div style="background-color: black; border: 1px black solid; border-radius: 100%; width: 20px;height: 20px; position: relative; left: 85%; display: flex; justify-content: center;align-items: center; color: transparent;"> .</div></button></div>
+
+	</section>
+
+	<section>
+		<div id="lose" class="lose" style="display:none; background-color: #e8e8e0; width: 500px; height: 300px; position: absolute; align-items: center; justify-content: center; left: 30%; top: 30%; box-shadow: 2px 2px 20px black; border-radius: 5px;"> ну, браток, не повезло получается 
+			<div id="close" class="close" style="position: relative; top: -50%; left: 30%; border: 1px black solid; border-radius: 100%; width: 15px; height: 15px; text-align: center; cursor: pointer;">X</div>
+		</div>
+	</section>
+
+<style>
+	.hover:hover .door {
+		transform: matrix(0.7,-0.3,0,1,0,0);
+		transform-origin: 0% 0%;
+	}
+
+
+</style>
+<script type="text/javascript">
+
+let lvl = 1;
+let doorOne = document.getElementById("0");
+let doorTwo = document.getElementById("1");
+let doorThree = document.getElementById("2");
+let lvlScreen = document.getElementById("lvlScreen");
+let btnClose = document.getElementById("close");
+let lose = document.getElementById("lose");
+
+lvlScreen.innerHTML = lvl;
+		
+		doorOne.addEventListener("click", () => { 
+			let randomDoor = Math.floor(Math.random() * 3);
+			if ( 0 == randomDoor){
+				lvl++
+				lvlScreen.innerHTML = lvl;
+				if (lvl == 100) {
+					alert("WIN")
+				}
+
+			}else {
+				lvl = 1;
+				lvlScreen.innerHTML = lvl;
+				lose.style.display = "flex";
+				btnClose.addEventListener("click", () => { 
+					lose.style.display = "none";
+				});
+			};
+
+		});
+
+
+		doorTwo.addEventListener("click", () => { 
+			let randomDoor = Math.floor(Math.random() * 3);
+			if ( 1 == randomDoor){
+				lvl++
+				lvlScreen.innerHTML = lvl;
+				if (lvl == 100) {
+					alert("WIN")
+				}
+
+			}else {
+				lvl = 1;
+				lvlScreen.innerHTML = lvl;
+				lose.style.display = "flex";
+				btnClose.addEventListener("click", () => { 
+					lose.style.display = "none";
+				});
+			};
+
+		});
+
+
+		doorThree.addEventListener("click", () => { 
+			let randomDoor = Math.floor(Math.random() * 3);
+			if ( 2 == randomDoor){
+				lvl++
+				lvlScreen.innerHTML = lvl;	
+				if (lvl == 100) {
+					alert("WIN")
+				}
+
+			} else {
+				lvl = 1;
+				lvlScreen.innerHTML = lvl;
+				lose.style.display = "flex";
+				btnClose.addEventListener("click", () => { 
+					lose.style.display = "none";
+				});
+			};
+
+		});
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

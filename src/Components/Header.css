@@ -1,0 +1,86 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo:hover span {
+  color: #1a5f25;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.mainscreen-menu {
+  display: flex;
+
+}
+
+.mainscreen-menu div {
+  position: relative;
+}
+
+.mainscreen-menu div a {
+  font-size: 26px;
+  margin-right: 40px;
+  text-decoration: none;
+  background-size: 10% 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.mainscreen-menu div a:visited {
+  color: #000;
+}
+
+.mainscreen-menu div a:hover {
+  color: #333;
+}
+
+.mainscreen-menu div:hover span {
+  -moz-transform: skew(-50deg, 0deg);
+  -webkit-transform: skew(-50deg, 0deg);
+  -o-transform: skew(-50deg, 0deg);
+  -ms-transform: skew(-50deg, 0deg);
+  transform: skew(-50deg, 0deg);
+  height: 100%;
+  top: 0;
+  border-radius: 20px;
+}
+
+.mainscreen-menu div span {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 80%;
+  height: 40%;
+  background-color: #03FFC5;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 14px;
+  }
+
+  .mainscreen-menu div a {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .mainscreen-menu div span {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 95%;
+  }
+}

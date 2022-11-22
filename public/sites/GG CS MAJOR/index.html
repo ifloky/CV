@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+	<link type="Image/x-icon" href="img/favGG.png" rel="icon">
+	<title>CS MAJOR</title>
+</head>
+<body>
+	<section class="mainscreen">
+		<div class="v-box">
+    		<video id="bg-video" src="cs.mp4" loop="" autoplay="" muted="" class="main_vid" "></video>
+    		<script>
+    		  document.getElementById('bg-video').play();
+    		</script>
+  		</div>
+		<div class="container">
+			<div class="mainimg"><img src="img/ka.jpg" alt=""></div>
+			<div class="logoimg"><img src="img/logo.png" alt=""></div>
+			<div class="rules">
+				<div class="rules_head">ПРАВИЛА И УСЛОВИЯ</div>
+				<div class="rules_text">ПОЛУЧИ 15% FREEBET ДО 50 BYN НА МАТЧИ ОТКРЫТОГО ЧЕМПИОНАТА <b>CS:GO | PGL Major Stockholm 2021 </b><br><br>
+<b>Как?</b><br><br>
+Сделай ставку от 10 BYN на матчи CS:GO | PGL Major Stockholm 2021 с 26 октября 2021 (10:00 GMT+3) до 07 ноября 2021 (23.59 GMT+3).<br>
+В турнире участвуют только ставки типа «Ординар» и «Экспресс» (лайв, линия). Минимальный коэффициент 1.5.
+В случае аннулирования или возврата ставки, она не участвует в акции. <br>
+Любая ставка с применением функции кэшаут, так же не участвует в акции.<br><br>
+<b>О твоем FREEBET</b><br><br>
+Фрибет, равный 15% от проигранной денежной суммы в предыдущий день, будет предоставляться ежедневно в течение акции.<br>
+Если игрок сделал ставку 50 BYN и выиграл 250 BYN, а также разместил ставку 400 BYN с коэффициентом 2 и проиграл в данный день, то он получит бонус, равный 15% из 150 BYN (400 BYN - 250 BYN). <br>
+Например, если игрок имеет более одной рассчитанной ставки за данный день, то он получит разницу между выигранной и проигранной суммами.<br>
+Если игрок выиграл большую сумму, чем проиграл в данный день, то он не получит бонус.<br><br>
+<b>Условия и положения по фрибету</b><br><br>
+Фрибет для проигранной в предыдущий день суммы будет предоставлен до 18:00 следующего дня.
+Максимальная сумма фрибета составляет 50 BYN.<br>
+Фрибет отыгрывается только одной ставкой на любое событие. Участвуют ставки «ординар» и «экспресс». Минимальный коэффициент для отыгрыша составляет 1.01.<br>
+Данный фрибет необходимо отыграть в течении 3 суток. <br><br>
+<b>Дополнительные условия</b><br><br>
+GG.BY оставляет за собой право изменить правила акции в любое время или отменить ее без предварительного уведомления пользователей.<br>
+В случае возникновения спорной ситуации, окончательное решение будет принято GG.BY
+В случае открытия второго игрового счета для получения бонуса, передачи игрового аккаунта или при обнаружении любого другого нарушения, компания имеет право отменить бонус, а также заблокировать данный игровой счет.<br>
+Принимая бонус, клиент соглашается с бонусными условиями, а также с общими правилами и положениями GG.BY, опубликованными на сайте www.grandcasino.by
+
+				</div>
+				<div class="button"><a href="https://www.grandcasino.by/register">РЕГИСТРАЦИЯ</a></div>
+			</div>
+			
+		</div>
+		<footer class="footer">	21+ </footer>
+	</section>
+
+
+	<style>
+* {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+body {
+	background-color: #ff1d53;
+}
+
+.mainimg {
+	display: none;
+}
+
+.logoimg {
+	display: none;
+}
+
+.mainscreen {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.v-box video{
+	position: absolute;
+	z-index: 2;
+	height: 100vh;
+}
+
+.container {
+	position: relative;
+	z-index: 100;
+	width: 50vw;
+	height: 100vh;
+	left: 0;
+}
+
+.rules {
+	width: 30vw;
+	position: relative;
+	top: 12vw;
+	left: 5vw;
+}
+
+.rules_head{
+	height: 70px;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.7vw;
+	border-radius: 7px 7px 0 0;
+}
+
+.rules_text {
+	padding: 30px;
+	height: 20vw;
+	overflow-x: auto; 
+	font-size: 16px;
+	font-weight: 300;
+	background-color: rgb(0,0,0, 0.4);
+	scrollbar-color: rgb(0,0,0, 0.4) rgb(255,255,255, 0.85); 
+	border-radius: 0 0 7px 7px;
+}
+
+.button {
+	position: relative;
+	width: 360px;
+	height: 70px;
+	background-color: #000;
+	top: 2vw;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+.button a {
+	text-decoration: none;
+	width: 360px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6vw;
+}
+
+.button a:hover {
+	background-color: #fff;
+	border-radius: 7px;
+	color: #ff0056;
+}
+
+.footer {
+	border: 2px #fff solid;
+	z-index: 500;
+	position: relative;
+	top: -5vh;
+	left: 97vw;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    background-color: rgb(0,0,0, 0.4);
+    border-radius: 0 0 7px 7px;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255,255,255, 0.85);
+    border-radius: 0 0 9em 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0,0,0,0.8);
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+}
+
+
+/*------------------- ADAPTIVE------PLANSHET-------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+
+.mainimg {
+	display: none;
+}
+
+.logoimg {
+	display: none;
+}
+
+.v-box video{
+	position: absolute;
+	z-index: 2;
+	width: 100vw;
+}
+
+.rules {
+	width: 32vw;
+	position: relative;
+	top: 24vw;
+	left: 5vw;
+}
+
+.button {
+	width: 200px;
+	height: 50px;
+
+}
+
+.button a {
+	width: 200px;
+	height: 50px;
+}
+
+.footer {
+	left: 95vw;
+}
+
+
+@media screen and (max-width: 980px) {
+
+body {
+	background-color: #ff0056;
+}
+
+.v-box video{
+	display: none;
+}
+
+.mainimg {
+	display: block;
+	position: absolute;
+}
+
+.mainimg img{
+	width: 100vw;
+	margin-top: 21vh;
+}
+
+.logoimg {
+	top: 20px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.logoimg img{
+	width: 80vw;
+}
+
+
+.rules {
+	width: 90vw;
+	top: 36vh;
+}
+
+.rules_head{
+	font-size: 2.8vh;
+	height: 45px;
+	background-color: rgb(0,0,0, 0.8);
+}
+
+.rules_text {
+	height: 30vh;
+	padding: 15px; 
+	font-size: 2vh;
+}
+
+.button {
+	width: 52vw;
+	height: 45px;
+}
+
+.button a {
+	width: 52vw;
+	height: 45px;
+	font-size: 2.7vh;
+}
+
+}
+
+/*------------------- ADAPTIVE------MOBILE--------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+.v-box video{
+	display: none;
+}
+
+.mainimg {
+	display: block;
+	position: absolute;
+}
+
+.mainimg img{
+	width: 100vw;
+	margin-top: 21vh;
+}
+
+.logoimg {
+	top: 20px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.logoimg img{
+	width: 80vw;
+}
+
+.footer {
+	left: 92vw;
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+}
+
+</style>
+
+
+
+</body>
+</html>
+
+

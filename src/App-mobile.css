@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px){
+  .container{
+    width: 90vw;
+  }
+
+  .mainscreen {
+    padding-top: 20px;
+  }
+
+  .mainscreen-body {
+    padding-top: 10vh;
+  }
+
+  .mainscreen-body h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .mainscreen-body p {
+    margin-top: 30px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 10px;
+    height: auto;
+    width: 320px;
+  }
+
+  .social span {
+    display: none;
+  }
+}

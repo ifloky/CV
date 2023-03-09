@@ -2,6 +2,7 @@ import './App.css';
 import './App-mobile.css'
 import Header from './Components/Header';
 import Work from './Components/Work';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -56,7 +57,7 @@ function App() {
       "mainText": "To Do list",
       "subText": "Standard todo sheet for React JS training"
     },
-        {
+    {
       "id": "8",
       "img": "img/dedsecret.png",
       "link": "sites/Ded secret/index.html",
@@ -76,10 +77,26 @@ function App() {
     <div className="App">
       <section className='mainscreen'>
         <div className="container">
-        <Header />
+          <Header />
           <div className="mainscreen-body">
             <h1>Hi, I’m Maksim, <div> Frontend developer </div></h1>
-            <p>I build beautiful websites and apps for businesses around the globe. If you need a modern and powerful website, send me an email. If we are a good fit, I will give you a time and cost estimate.</p>
+            <p>
+              junior frontend developer hungry for creative, useful and modern web applications, eager to work in a positive-minded team.
+              My stack is: </p>
+            <span>
+              <ul>
+                <li>- HTML5</li>
+                <li>- CSS3</li>
+                <li>- SCSS</li>
+                <li>- SEO</li>
+              </ul>
+              <ul>
+                <li> - JS (es6)</li>
+                <li>- React</li>
+                <li>- Git</li>
+                <li>- SQL</li>
+              </ul>
+            </span>
             <div className='main-button'><span></span><a href="#myWork">See my works</a></div>
           </div>
           <div className="social">
@@ -94,18 +111,21 @@ function App() {
       <section className='myWork'>
         <div className="container">
           {works.map((item) => (
-            <Work 
-              key = {item.id}
-              name = {item.name}
-              img = {item.img}
-              mainText = {item.mainText}
-              subText = {item.subText}
-              link = {item.link}
+            <Work
+              key={item.id}
+              name={item.name}
+              img={item.img}
+              mainText={item.mainText}
+              subText={item.subText}
+              link={item.link}
             />
           ))}
         </div>
       </section>
 
+      <h6>To be continued...</h6>
+
+      <Footer />
     </div>
   );
 }

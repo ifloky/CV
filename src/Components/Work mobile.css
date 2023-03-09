@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  .work-prev {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+
+  .work-img {
+    height: 60vw;
+  }
+
+  .work-description a span {
+    top: 15%;
+    left: 15px;
+  }
+
+}

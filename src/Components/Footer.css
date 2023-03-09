@@ -1,0 +1,14 @@
+.footer {
+  background-color: #E6E7EB;
+  padding: 10px 20px
+}
+
+.tel {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tel a {
+  text-decoration: none;
+  margin-left: 20px;
+}

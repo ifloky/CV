@@ -1,5 +1,6 @@
 import React from 'react'
 import './Work.css';
+import './Work mobile.css';
 
 export default function Work(props) {
   return (

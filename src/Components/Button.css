@@ -1,0 +1,49 @@
+.button {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  text-decoration: none;
+}
+
+.button a:hover span {
+  -moz-transform: skew(-50deg, 0deg);
+  -webkit-transform: skew(-50deg, 0deg);
+  -o-transform: skew(-50deg, 0deg);
+  -ms-transform: skew(-50deg, 0deg);
+  transform: skew(-50deg, 0deg);
+  height: 40%;
+  top: 0;
+  border-radius: 20px;
+}
+
+.button a {
+  font: 1rem/1.6 'Inter';
+  margin-right: 40px;
+  text-decoration: none;
+  background-size: 10% 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.button:hover span {
+  -moz-transform: skew(-50deg, 0deg);
+  -webkit-transform: skew(-50deg, 0deg);
+  -o-transform: skew(-50deg, 0deg);
+  -ms-transform: skew(-50deg, 0deg);
+  transform: skew(-50deg, 0deg);
+  height: 100%;
+  top: 0;
+  border-radius: 20px;
+}
+
+.button span {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  top: 50%;
+  width: 90%;
+  height: 40%;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}

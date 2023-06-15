@@ -6,8 +6,8 @@ export default function Header() {
     <header className="header">
       <p className='logo'>Petrenko <span> Maksim</span></p>
       <nav className="mainscreen-menu">
-        <div><span></span><a href="#myWork">My work </a></div>
-        <div><span></span><a href="#GetTouch">Get in touch </a></div>
+        <div><a href="#myWork">My work <span></span></a></div>
+        <div><a href="#GetTouch">Get in touch <span></span></a></div>
       </nav>
     </header>
   )

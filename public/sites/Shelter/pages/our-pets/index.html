@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../../src/images/pet-house.png" type="image/x-icon">
+  <title>Our pets</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="logo" href="../../index.html">
+        <p class="title">Cozy House</p>
+        <p class="subtitle subtext">Shelter for pets in Boston</p>
+      </a>
+      <nav class="navigation">
+        <div class="nav-icon"></div>
+        <ul>
+          <li>
+            <a href="../../index.html#about" class="">About the shelter</a>
+          </li>
+          <li>
+            <a href="#" class="active">Our pets</a>
+          </li>
+          <li>
+            <a href="../../index.html#help" class="">Help the shelter</a>
+          </li>
+          <li>
+            <a href="#contacts" class="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <section class="pets">
+    <div class="container">
+      <h1 class="header-3">Our friends who
+        are looking for a house</h1>
+      <div class="pets-carusel">
+        <div class="pets-carusel__card-wrapper">
+          <!--card-->
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="simple-btn simple-btn-circle simple-btn-circle-inactive" id="startPage">&#5176;&#5176; </div>
+        <div class="simple-btn simple-btn-circle simple-btn-circle-inactive" id="prevPage">&#5176;</div>
+        <div class="pages"></div>
+        <div class="simple-btn simple-btn-circle" id="nextPage">&#5171;</div>
+        <div class="simple-btn simple-btn-circle" id="endPage">&#5171;&#5171;</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacts" class="footer">
+    <div class="container">
+      <div class="footer__contact">
+        <p class="header-3 head">For question and suggestions</p>
+        <a href="mailto:email@shelter.com" class="header-4 mail" target="_blank">email@shelter.com</a>
+        <a href="tel:+136745677554" class="header-4 tel" target="_blank">+13 674 567 75 54</a>
+      </div>
+      <div class="footer__adress">
+        <p class="header-3 head">We are waiting for your visit</p>
+        <a href="https://goo.gl/maps/urXQ1oqjN24RqNbk6" class="header-4 location" target="_blank">1 Central Street,
+          Boston (entrance
+          from the store)</a>
+        <a href="https://goo.gl/maps/vspYchekqqV9nwwS8" class="header-4 location" target="_blank">18 South Park, London
+        </a>
+      </div>
+      <div class="img">
+        <img src="../../src/images/footer-puppy.png" alt="puppy">
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- MODAL WINDOW-->
+  <div class="modal-wrapper" id="Jennifer">
+    <div class="modal-window">
+      <div class="modal-window__btn-close simple-btn simple-btn-circle">&#10005;</div>
+      <div class="modal-window__card">
+       
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../../scripts/menu.js"></script>
+  <script src="../../scripts/pagination.js"></script>
+  <script src="../../scripts/openCard.js"></script>
+</body>
+
+</html>
